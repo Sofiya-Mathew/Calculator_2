@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    background-position: center center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000 !important;
+}
+.cont {
+    background-color: rgb(79, 26, 5);
+    overflow: hidden;
+    height: 400px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow:  5px 5px 5px  #5f2727;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    justify-content: space-around;
+    background-color: brown;
+    height: 55px;
+    font-size: larger;
+}
+.inp{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+.row div{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+span{
+    font-size: x-large;
+}
+#result{
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+}
+.buttons{
+    border: 2px rgb(69, 42, 42) solid;
+}

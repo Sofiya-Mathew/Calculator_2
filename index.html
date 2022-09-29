@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="cont mt-5 ">
+        <div class="inp p-2">
+            <input id="result" type="text" placeholder="Enter" class="i">
+            <button style="float: right; background-color:  rgb(103, 48, 26) ;border-radius: 10px  ; border-color: brown ; color: white ;">Calculator</button>
+        </div>
+        <div class="buttons mt-2">
+        <div class="row">
+            <div id="seven" class="col-2" onclick="displayNum('7')">7</div>
+            <div id="eight" class="col-2"onclick="displayNum(8)">8</div>
+            <div id="nine" class="col-2"onclick="displayNum(9)">9</div>
+            <div id="mul" class="col-2"onclick="displayNum('*')"><span>&#215;</span></div>
+        </div>
+        <div class="row">
+            <div id="four" class="col-2"onclick="displayNum(4)">4</div>
+            <div id="five" class="col-2"onclick="displayNum(5)">5</div>
+            <div id="six" class="col-2"onclick="displayNum(6)">6</div>
+            <div id="div" class="col-2"onclick="displayNum('/')"><span>&#247;</span></div>
+        </div>
+        <div class="row">
+            <div id="one" class="col-2"onclick="displayNum(1)">1</div>
+            <div id="two" class="col-2"onclick="displayNum(2)">2</div>
+            <div id="three" class="col-2"onclick="displayNum(3)">3</div>
+            <div id="add" class="col-2"onclick="displayNum('+')"><span>&#43;</span></div>
+        </div>
+        <div class="row">
+            <div class="col-2"onclick="ClearBox('AC')">AC</div>
+            <div class="col-2"onclick="displayNum(0)">0</div>
+            <div class="col-2"onclick="displayNum('-')"><span>&#8722;</span></div>
+            <div class="col-2"onclick="evaluateExpression()"><span>&#61;</span></div>
+        </div>
+        <div class="row">
+
+            <div class="col-2"onclick="removeLastItem()"><span>&#8855;</span></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+
+        </div>
+    </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
